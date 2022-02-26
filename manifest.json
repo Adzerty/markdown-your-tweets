@@ -1,0 +1,27 @@
+{
+    "name": "Markdown-ur-txts",
+    "description": "Write text with Markdown and copy/paste it",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+      },
+    "default_icon": {
+        "64": "./icons/icon64.png"
+    },
+    "icons": {
+        "64": "./icons/icon64.png"
+    },
+    "action": {
+        "default_popup": "content.html"
+    },
+    "permissions": [
+        "tabs",
+        "activeTab", 
+        "storage",
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://*"
+    ]
+  }
